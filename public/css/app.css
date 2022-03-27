@@ -1,0 +1,142 @@
+.fondo {
+    background-image: url(/images/fondo.gif?55807737eb769c01307eecf7eb46ef6c);
+    background-repeat: repeat;
+    background-size: cover;
+
+}
+
+.carousel-inner img{
+    height: 600px;
+}
+.nav-color{
+    background-color: rgba(8, 35, 78);
+    
+}
+.intro{
+    
+    color: aliceblue;
+    background-color: rgba(8, 35, 78, 0.829);
+    border-radius: 5px;
+    padding: 2rem;
+}
+.intro h3,p,h2,hr,h5 {
+    text-align: center;
+    padding-bottom: .3rem;
+
+}
+.form1{
+    display: flex;
+    justify-content: center;
+}
+
+.data-user{
+    padding-right: 1rem;
+}
+
+.info-user{
+    padding-left: 1rem;
+    
+} 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.last-div-group{
+    
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    color: aliceblue;
+}
+.last-text{
+    padding: 2rem;
+}
+
+.w-oline{
+    display: flex;
+    border: 1px solid;
+    width: 80%;
+    margin: auto;
+    opacity: 1;
+}
+
+.d-space{
+    height: 300px;
+}
+
+.h3-color{
+    color: aliceblue;
+}
+
+.div-us{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-image: url(/images/us.webp?4cd193c84976373f0e9cd73772d4154d);
+    background-position: -30%;
+    background-size: cover;
+    border-radius: 5px;
+    margin-top: 2rem;
+
+}
+.div-mision{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-image: url(/images/mision.webp?c2b7f3c8c42b4040377952266997fa7b);
+    background-size: cover;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+.div-vision{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-image: url(/images/vision.webp?7b4a6fc8ea35d13591933d0d45dcdd55);
+    background-size: cover;
+    border-radius: 5px;
+    background-position: -1%;
+    margin-top: 2rem;
+}
+
+.cont-about{
+    background-color: rgb(223, 227, 231, .8);
+    width: 50%;
+    margin-left: 50%;
+    padding: 2rem 2rem;
+    border-radius: 5px;
+
+}
+.cont-about h2{
+    margin-top: 10%;
+    height: 20%;
+
+}
+
+.services img{
+    padding: 1rem 1rem;
+    border: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+@media only screen and (max-width: 990px) {
+
+    .cont-about{
+    
+        width: 100%;
+        margin-left: 0;
+
+    }
+    .last-div-group{
+    
+        display:block;
+        padding: 0;
+    }
+}
