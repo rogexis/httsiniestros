@@ -12,7 +12,12 @@ import { createRouter, createWebHistory } from 'vue-router';
 import { routes } from './routes';
 import { createApp } from 'vue';
 
+import { library } from '@fortawesome/fontawesome-svg-core'
 
+import { faPhone, faCircleCheck } from '@fortawesome/free-solid-svg-icons'
+
+import { FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
+library.add(faPhone, faCircleCheck)
 // createApp.use(createRouter);
 // createApp.use(VueAxios, axios);
 
@@ -22,6 +27,8 @@ const router = createRouter({
 });
 
 const app = createApp(App);
+app.component('font-awesome-icon', FontAwesomeIcon)
+
 app.use(router)
 app.use(VueAxios, axios);
 app.mount('#app')
