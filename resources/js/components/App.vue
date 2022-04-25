@@ -13,12 +13,17 @@
       HTT Siniestros
     </a>
     
-<div > 
-
-    <a href="tel:33-1089-9624">
-        <img src="~../images/phone-solid.svg" style="color: white" alt="" width="70" height="24">
-        33-1089-9624
+<div class="emergency"> 
+     
+    <span>N° de Emergencias</span>
+    <a href="tel:33-2055-3604">
+        3320553604 
     </a>
+    <span> ó </span>
+    <a href="tel:33-3028-0091">
+        3330280091
+    </a>
+
 
 </div>
   </div>

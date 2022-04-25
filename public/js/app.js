@@ -50390,8 +50390,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 /* harmony import */ var _images_whatsapp_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/whatsapp-logo.png */ "./resources/js/images/whatsapp-logo.png");
 /* harmony import */ var _images_LOGO_HTT_webp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/LOGO_HTT.webp */ "./resources/js/images/LOGO_HTT.webp");
-/* harmony import */ var _images_phone_solid_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/phone-solid.svg */ "./resources/js/images/phone-solid.svg");
-
 
 
 
@@ -50425,17 +50423,13 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   alt: "",
   width: "70",
   height: "24"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" HTT Siniestros ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "tel:33-1089-9624"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: _images_phone_solid_svg__WEBPACK_IMPORTED_MODULE_3__["default"],
-  style: {
-    "color": "white"
-  },
-  alt: "",
-  width: "70",
-  height: "24"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" 33-1089-9624 ")])])])], -1
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" HTT Siniestros ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "emergency"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "N° de Emergencias"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "tel:33-2055-3604"
+}, " 3320553604 "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, " ó "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "tel:33-3028-0091"
+}, " 3330280091 ")])])], -1
 /* HOISTED */
 );
 
@@ -50680,21 +50674,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/LOGO_HTT.webp?beed160fd1ef45159d0cc12c200ad392");
-
-/***/ }),
-
-/***/ "./resources/js/images/phone-solid.svg":
-/*!*********************************************!*\
-  !*** ./resources/js/images/phone-solid.svg ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/phone-solid.svg?7a25bca637564e577b8f5e00db3bc2d9");
 
 /***/ }),
 

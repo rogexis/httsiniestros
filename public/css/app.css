@@ -2,25 +2,35 @@
     background-color:#eceef1;
 
 }
-
+.colr .card{
+    background-image: url(/images/gdl.webp?2c7fc9dbd39d552d9e38dc096bd4e7e7);
+    
+    background-repeat: repeat;
+    background-size: cover;
+}
 .wa-float{
     position: fixed;
     width: 55px;
     height: 55px;
     bottom: 50px;
     right: 50px;
+    z-index: 100;
 }
 
 .short-w{
-    display:none;
+    display:block;
 }
-.carousel-inner img{
+.carousel-1 img{
     height: 600px;
 }
 .nav-color{
     background-color: rgba(8, 35, 78);
     
 
+}
+span {
+    color: white;
+    
 }
 a:link {
     color: white;
@@ -68,7 +78,24 @@ img{
     width: 67%;
     align-items: center;
 }
+.career-atn{
+    display: flex;
+    margin-top: 1rem;
+}
 
+.career{
+    flex: 0 0 auto;
+    width: 67%;
+    text-align: center;
+}
+.atn{
+    flex: 0 0 auto;
+    width: 33%;
+}
+.coll{
+    flex: 0 0 auto;
+    width: 33%;
+}
 .intro{
     
     color: aliceblue;
@@ -82,9 +109,46 @@ img{
 
 }
 .form1{
+    height:  10rem;
     display: flex;
     justify-content: center;
 }
+
+.thrid{
+    height:  10rem;
+    position: relative;
+}
+.form1 p,h5{
+    color: aliceblue;
+}
+.form1 button, .form1 a{
+  color: black;
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  background-color: rgba(240, 248, 255, .5);
+  
+}
+.servs{
+    position: relative;
+
+}
+.servs h3{
+  background-color: rgba(240, 248, 255, .5);
+  font-weight: bolder;
+  padding: 1rem;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  text-align: center;
+}
+
 form label{
     font-weight: bold;
 }
@@ -187,21 +251,40 @@ input[type=number] {
 
 @media only screen and (max-width: 770px) {
 
-    .coll{
-        display: none;
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+        
+        display: block;
+    
     }
-    .colr{
+    .navbar-margin{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .navbar-brand,.emergency{
         width: 100%;
     }
-    .short-w{
-        display:block;
+    .coll{
+        margin-top: 2.5rem;
+        width: 100%;
     }
-    .h3h{
-        display: none;
-
+    .colr{
+        margin-top: 1rem;
+        width: 100%;
     }
-    .navbar{
-        vertical-align:baseline;
+    .career-atn{
+        display: block;
+    }
+    .career{
+        width: 100%;
+    }
+    .atn{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .form1 button, .form1 a{
+    
+        width: 100%;
     }
     
 }
