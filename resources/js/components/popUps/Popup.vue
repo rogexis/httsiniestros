@@ -13,19 +13,19 @@
             <div class="data-user w-100">
               <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Tipo de Vehículo</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Juan Perez">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sedan, SUV, Moto, Vehículo de Carga, ...">
                 </div>
               <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Modalidad de Pago</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Juan Perez">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
                 </div>
               <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Servicios Adicionales</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Juan Perez">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Correo</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="j.perez@httseguros.com">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="j.perez@httsiniestros.com">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Número de Contacto</label>
