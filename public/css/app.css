@@ -315,6 +315,11 @@ input[type=number] {
         margin: 0 auto;
         text-align: center;
     }
+    
+    .pop-inner {
+        padding: 2rem 1rem;
+        width: 90%;
+    }
 
     .navbar-brand,.emergency{
         width: 100%;
