@@ -1,5 +1,11 @@
 <template>
   <br />
+ 
+		<Popup 
+			v-if="popupTriggers.buttonTrigger" 
+			:TogglePopup="() => TogglePopup('buttonTrigger')">
+		</Popup>
+
   <div class="row">
     <div class="coll">
       <div class="card abcard">
@@ -60,7 +66,7 @@
             <div class="form1">
               <div class="data-user w-100">
                 <div class="mb-3 thrid">
-                  <button type="submit" class="btn btn-primary">Daños a Terceros</button>
+                  <button  type="button" @click="() => TogglePopup('buttonTrigger')" class="btn btn-primary">Daños a Terceros</button>
                   
                 </div>
                 
@@ -97,7 +103,7 @@
           <router-link exact-active-class="active" to="/servicios" class="serv">
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-          <h3>SERVICIOS ATENDIDOS</h3>
+              <h4>SERVICIOS ATENDIDOS</h4>
 
               <div class="carousel-item active">
                 <img src="~../images/foto1.jpg" class="w-100" alt="#" />
@@ -214,3 +220,24 @@
 
   <br />
 </template>
+
+<script>
+import { ref } from 'vue';
+import Popup from "./popUps/Popup.vue"
+export default {
+	setup () {
+		const popupTriggers = ref({
+			buttonTrigger: false
+		});
+		const TogglePopup = (trigger) => {
+			popupTriggers.value[trigger] = !popupTriggers.value[trigger]
+		}
+    
+		return {
+			Popup,
+			popupTriggers,
+			TogglePopup
+		}
+	}
+}
+</script>

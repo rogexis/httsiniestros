@@ -20,7 +20,7 @@ import { FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
 library.add(faPhone, faCircleCheck)
 // createApp.use(createRouter);
 // createApp.use(VueAxios, axios);
-
+import Popup from "./components/popUps/Popup.vue"
 const router = createRouter({
     history: createWebHistory(),
     routes
@@ -28,7 +28,7 @@ const router = createRouter({
 
 const app = createApp(App);
 app.component('font-awesome-icon', FontAwesomeIcon)
-
+app.component("Popup", Popup);
 app.use(router)
 app.use(VueAxios, axios);
 app.mount('#app')
