@@ -1,6 +1,9 @@
 <?php
 
+use App\Mail\TercerosMailable;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +20,28 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+// Route::get('/contactanos', function (){
+//     $correo = new TercerosMailable;
+//     Mail::to('rogexis@gmail.com')->send($correo);
+//     return "Correo Enviado!";
+//});
+
 
 Route::get('{any}', function () {
     return view('app');
 })->where('any', '.*');
+
+Route::post("/sendmail", function(Request $request)
+{
+    # code...
+        $content = $request->validate([
+            'tvehiculo' => 'required',
+            'mpago' => 'required',
+            'nombre' => 'required',
+            'correo' => 'required',
+            'ncontacto' => 'required'
+        ]);
+        $correo = new TercerosMailable($content);
+        Mail::to('contacto@httsiniestros.com')->send($correo);
+});
+
