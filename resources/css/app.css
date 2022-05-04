@@ -65,6 +65,9 @@ body{
     
 
 }
+.col-auto{
+    margin-bottom: .25rem;
+}
 span {
     color: aliceblue;
     
@@ -146,7 +149,6 @@ img{
 
 }
 .form1{
-    height:  10rem;
     display: flex;
     justify-content: center;
 }
@@ -302,6 +304,10 @@ input[type=number] {
 }
 .footer-up{
     background-color: #0077ce;
+}
+.footer-color{
+    background-color: #0077ce;
+    border: 0;
 }
 
 @media only screen and (max-width: 770px) {

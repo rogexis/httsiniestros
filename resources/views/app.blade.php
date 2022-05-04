@@ -31,5 +31,11 @@
             alert("Será enlazado con un asesor especializado por WhatsApp.");
         } 
     </script>
+    
+    <script>
+        function scrollToTop() {
+            window.scrollTo(0, 0);
+        }
+    </script>
 </body>
 </html>

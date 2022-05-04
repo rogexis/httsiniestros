@@ -88,11 +88,32 @@
       <div class="career-atn">
         <div class="career bg-r">
           <div class="card-body">
-          <h3>Unete a nuestro equipo de ventas!</h3>
-          <form action="">
-          <label class="form-label" for="customFile">Adjunta tu CV.</label>
-          <input type="file" class="form-control form-control-sm" id="formFileSm" />
-          <button style="margin-top: 1rem;"  type="submit" class="btn btn-primary">Enviar</button>
+          <h6>Unete a nuestro equipo de ventas! Compartenos tus datos y CV</h6>
+          <form @submit="bolsaTrabajo">
+          <div class="row g-3 align-items-center">
+            <div class="col-auto w-100">
+              <input type="text" id="inputPassword6" v-model="nombre" class="form-control form-control-sm" aria-describedby="passwordHelpInline" placeholder="Nombre">
+            </div>
+          </div>
+          
+          <div class="row g-3 align-items-center">
+            <div class="col-auto w-100" >
+              <input type="email" id="inputPassword6" v-model="correo" class="form-control form-control-sm" aria-describedby="passwordHelpInline" placeholder="Correo">
+            </div>
+          </div>
+          
+          <div class="row g-3 align-items-center">
+            <div class="col-auto w-100">
+              <input type="number" id="inputPassword6" v-model="numero" class="form-control form-control-sm" aria-describedby="passwordHelpInline"  placeholder="Número">
+            </div>
+          </div>
+          
+          <div class="row g-3 align-items-center">
+            <div class="col-auto w-100">
+              <input type="file" class="form-control form-control-sm file-input" @change="onchange" id="formFileSm" />
+            </div>
+          </div>
+          <button style="margin-top: 1rem;"  type="submit" class="btn btn-primary" placeholder="Adjunta tu CV">Enviar</button>
           </form>
         </div>
         </div>
@@ -238,6 +259,46 @@ export default {
 			popupTriggers,
 			TogglePopup
 		}
-	}
+	},
+  data(){
+        return {
+            
+                nombre:"",
+                correo:"",
+                numero:"",
+                file: null,
+                fileName:""
+           
+        }
+    },
+    methods:{
+        onchange(e){
+          console.log("selected File", e.target.files[0])
+          this.file = e.target.files[0];
+          let fd = new FormData();
+          fd.append("file", this.file);
+          this.axios.post('/upload-cv',fd).then(response=>{
+            console.log(response ,"Archivo cargado")
+            this.fileName = response.data
+          }).catch(error=>{
+                console.log(error)
+            });
+        },
+        async bolsaTrabajo(){
+            const bolsaT = {
+                
+                    nombre:       this.nombre,
+                    correo:       this.correo,
+                    numero:       this.numero,
+                    fileName:     this.fileName
+                }
+
+            await this.axios.post('/upload-file',bolsaT).then(response=>{
+                alert('Hemos recibido tu Curriculum. Lo revisaremos y nos pondremos en contacto contigo')
+            }).catch(error=>{
+                console.log(error)
+            })
+        }
+    }
 }
 </script>

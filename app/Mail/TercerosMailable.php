@@ -12,7 +12,7 @@ class TercerosMailable extends Mailable
     use Queueable, SerializesModels;
 
     public $subject = "Cotización de Poliza Daños a Terceros";
-    public $content;
+    public $content = "";
 
     /**
      * Create a new message instance.
